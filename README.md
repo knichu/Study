@@ -1,2 +1,2 @@
-# 2022-01-16
-오늘부터 깃허브 시작
+# Python tip for coding test
+## 자료형
