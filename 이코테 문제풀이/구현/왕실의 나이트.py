@@ -16,12 +16,12 @@ count = 0
 for i in range(8):
     nx = x + dx[i]
     ny = y + dy[i]
-    if nx < 0 or nx > 7 or ny < 0 or ny > 7:
+    if 0 <= nx <= 7 and 0 <= ny <= 7:
+        count += 1
         nx, ny = x, y
+    else:
         continue
-    nx, ny = x, y
-    count += 1
-    
+
 print(count)
 
 
