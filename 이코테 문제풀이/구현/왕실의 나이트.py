@@ -18,7 +18,6 @@ for i in range(8):
     ny = y + dy[i]
     if 0 <= nx <= 7 and 0 <= ny <= 7:
         count += 1
-        nx, ny = x, y
     else:
         continue
 
