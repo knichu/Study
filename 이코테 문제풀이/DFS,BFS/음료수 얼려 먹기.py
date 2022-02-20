@@ -1,6 +1,6 @@
 # 내가 작성한 코드(답안 예시를 봐버림..)
 
-n, m  = map(int, input().splt())
+n, m  = map(int, input().split())
 
 ice_maker = [list(map(int, input().split())) for i in range(n)]
 
@@ -23,7 +23,7 @@ count = 0
 
 for i in range(n):
     for j in range(m):
-        dfs(i, j) == True:
+        if dfs(i, j) == True:
             count += 1
             
 print(count)
