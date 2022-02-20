@@ -2,7 +2,7 @@
 
 n, m  = map(int, input().split())
 
-ice_maker = [list(map(int, input().split())) for i in range(n)]
+ice_maker = [list(map(int, input())) for i in range(n)]
 
 def dfs(x, y):
     
