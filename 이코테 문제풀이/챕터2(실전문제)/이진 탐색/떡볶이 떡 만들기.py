@@ -7,7 +7,7 @@ def cut(array, num, length):
     k = array[0]
     for i in range(1, num - 1):
         k = k + array[i]
-        x = (k - length) // (i + 1)
+        x = (k - length) / (i + 1)
         if x >= array[i + 1]:
             return x
         
@@ -22,7 +22,7 @@ tteok = list(map(int, input().split()))
 
 tteok.sort(reverse = True)
 
-print(cut(tteok, n, m))
+print(int(cut(tteok, n, m)))
 
 
 
