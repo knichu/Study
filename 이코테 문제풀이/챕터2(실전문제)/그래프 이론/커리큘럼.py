@@ -18,6 +18,14 @@ for i in range(1, n + 1):
         graph[k[j]].append(i)
         indegree[i] += 1
 
+# graph  = [[]
+#           [2, 3, 4]
+#           []
+#           [4, 5]
+#           []
+#           []
+# ]
+
 # 위상 정렬 함수
 def topology_sort():
     result = [] # 알고리즘 수행 결과를 담을 리스트
