@@ -26,6 +26,8 @@ for i in range(1, n + 1):
 #           []
 # ]
 
+# indegree = [0, 0, 1, 1, 2, 1]
+
 # 위상 정렬 함수
 def topology_sort():
     result = [] # 알고리즘 수행 결과를 담을 리스트
