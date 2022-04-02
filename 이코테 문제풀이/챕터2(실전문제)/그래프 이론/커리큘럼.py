@@ -16,7 +16,7 @@ for i in range(1, n + 1):
     l = len(k)
     for j in range(1, l-1):
         graph[k[j]].append(i)
-        indegree[i] += 1
+        indegree[i] += 1      # deque 이용해서 leftpop을 활용해야 할거 같은데 방법을 모르겠음.
 
 # graph  = [[]
 #           [2, 3, 4]
