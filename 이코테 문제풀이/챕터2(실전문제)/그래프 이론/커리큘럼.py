@@ -28,7 +28,7 @@ for i in range(1, n + 1):
 
 # indegree = [0, 0, 1, 1, 2, 1]
 
-# time = [10, 10, 4, 4, 3]
+# time = [0, 10, 10, 4, 4, 3]
 
 # 위상 정렬 함수
 def topology_sort():
