@@ -2,7 +2,7 @@
 
 from collections import deque
 
-n = int(input())
+n = int(input())  # n = 5
 
 indegree = [0] * (n + 1)
 
