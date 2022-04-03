@@ -25,7 +25,7 @@ result_time = 0
 current_time = 0
 
 def dfs(graph, start):
-    current_time += time[start + 1] 
+    current_time += time[start] 
     for i in graph[start]:
         if not graph[start]:
             result_time = max(result_time, current_time)
