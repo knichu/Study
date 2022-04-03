@@ -2,7 +2,7 @@ n = int(input())  # n = 5
 
 graph = [[] for i in range(n + 1)]
 
-time = [] * (n + 1)
+time = [0] * (n + 1)
 
 for i in range(1, n + 1):
     k = list(map(int, input().split()))
@@ -31,7 +31,6 @@ def dfs(graph, start):
         current_time = a
         if not graph[start]:
             result_time = max(result_time, current_time)
-            #current_time = ### 이부분을 이전 단계의  current_time을 고려하도록 해야함
         else:
             dfs(graph, i)
 
