@@ -25,11 +25,13 @@ result_time = 0
 current_time = 0
 
 def dfs(graph, start):
-    current_time += time[start] 
+    current_time += time[start]
+    a = current_time
     for i in graph[start]:
+        current_time = a
         if not graph[start]:
             result_time = max(result_time, current_time)
-            current_time = ### 이부분을 이전 단계의  current_time을 고려하도록 해야함
+            #current_time = ### 이부분을 이전 단계의  current_time을 고려하도록 해야함
         else:
             dfs(graph, i)
 
