@@ -21,7 +21,6 @@ for i in range(1, n + 1):
 
 # time = [0, 10, 10, 4, 4, 3]
 
-q = deque()
 result_time = 0
 current_time = 0
 
