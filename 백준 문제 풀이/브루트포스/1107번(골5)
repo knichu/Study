@@ -1,0 +1,20 @@
+import sys
+input = sys.stdin.readline
+
+target = int(input())
+n = int(input())
+no_use = []
+if n > 0:
+    no_use = list(map(int, input().split()))
+mn = abs(target - 100)
+if len(no_use) == 10:
+    print(mn)
+else:
+    for i in range(1000001):
+        i = str(i)
+        for j in range(len(i)):
+            if int(i[j]) in no_use:
+                break
+            elif j == len(i) - 1:
+                mn = min(mn, abs(int(i) - target) + len(i))
+    print(mn)
